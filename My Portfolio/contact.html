@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./portfolio.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"> -->
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Gravitas+One&family=Lexend:wght@100..900&family=Markazi+Text:wght@400..700&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <title>Contact</title>
+    
+</head>
+<style>
+
+</style>
+
+<body>
+    <div id="particles-js"></div>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                HARSH <span>KADAM</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a
+                        href="./index.html">Home</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a
+                        href="./about.html">About</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a
+                        href="./skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
+                        href="./projects.html" ">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
+                        href="./contact.html" ">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html" >About</a>
+                <a href="./skills.html" >Skills</a>
+                <a href="./projects.html">Projects</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+
+
+    </nav>
+    <section>
+        <div class="maincontainer" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+            <h1>Contact Me</h1>
+        </div>
+
+        <div class="social-links">
+
+            <a href="https://www.instagram.com/harshkadam199?igsh=YnhkOHRzeHd0ZWFy " target="_blank" data-aos="fade-up"
+                data-aos-duration="1500" data-aos-delay="1300"><abbr title="INSTAGRAM"><i
+                        class="fa-brands fa-instagram"></i> </abbr>
+            </a>
+            <abbr title="FACEBOOK"><a href="https://www.facebook.com/share/1A3gLb2H8B/?mibextid=qi2Omg" target="_blank"
+                    data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i
+                        class="fa-brands fa-facebook"></i></abbr></a>
+
+            <abbr title="LINKEDIN"><a
+                    href="https://www.linkedin.com/in/harsh-kadam-b35332340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i
+                        class="fa-brands fa-linkedin"></i></abbr></a>
+            <abbr title="GITHUB"><a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i
+                        class="fa-brands fa-github"></i></abbr></a>
+        </div>
+
+
+        <!-- Contact Section -->
+        <div class="contact-wrapper">
+            <div id="contact" class="bg-dark text-white py-5">
+                <div class="container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                    <h2 class="text-center">Send Message</h2>
+                    <form id="contact-form" action="#" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name:</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message:</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+    </section>
+
+
+
+
+
+
+
+    <script src="particles.js"></script>
+    <script src="contact.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+
+</body>
+
+</html>
