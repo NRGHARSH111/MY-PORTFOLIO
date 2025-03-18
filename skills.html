@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./skills.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Skills</title>
+</head>
+
+<body>
+    <div id="particles-js"> </div>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                HARSH <span>KADAM</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a
+                        href="./index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a
+                        href="./about.html" target="_blank">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a
+                        href="./skills.html" target="_blank">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
+                        href="./projects.html" target="_blank">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
+                        href="./contact.html" target="_blank">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="#">Skills</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <h2 data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500">Skills</h2>
+        <div class="main-container" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">
+            <div class="skills1">
+                <img src="./images/html.png" alt="HTML Logo">
+                <p>HTML</p>
+                <div class="progress-container">
+                    <div class="progress-bar">75%</div>
+                </div>
+            
+            </div>
+            <div class="skills2">
+                <img src="./images/css-3.png" alt="CSS Logo">
+                <p>CSS</p>
+                <div class="progress-container">
+                    <div class="progress-bar">80%</div>
+                </div>
+            </div>
+            <div class="skills3">
+                <img src="./images/social.png" alt="jQuery Logo">
+                <p>jQuery</p>
+                <div class="progress-container">
+                    <div class="progress-bar">70%</div>
+                </div>
+            </div>
+            <div class="skills4">
+                <img src="./images/sql-server.png" alt="SQL Logo">
+                <p>SQL</p>
+                <div class="progress-container">
+                    <div class="progress-bar">80%</div>
+                </div>
+            </div>
+            <div class="skills5">
+                <img src="./images/java-script.png" alt="JavaScript Logo">
+                <p>JavaScript</p>
+                <div class="progress-container">
+                    <div class="progress-bar">72%</div>
+                </div>
+            </div>
+        </div>
+        <section id="education" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500">
+            <h3>Education</h3>
+            
+            <!-- Upper Vertical Line -->
+            <div class="upper-vertical-line"></div>
+        
+            <!-- Horizontal Line -->
+            <div class="horizontal-line"></div>
+        
+            <!-- Education Timeline Container -->
+            <div class="vertical-box">
+                <!-- Left Timeline (10th) -->
+                <div class="vertical-line">
+                    <div class="edu-box  left-box">
+                        <h4>10th Standard</h4>
+                        <p>St.patrick,Convent High School,year-2019</p>
+                    </div>
+                </div>
+        
+                <!-- center Timeline (Diploma) -->
+                <div class="vertical-line">
+                    <div class="edu-box center-box">
+                        <h4>12th Standard</h4>
+                        <p>S.V.K.T College Nashik, year-2021</p>
+                    </div>
+                </div>
+        
+                <!-- right Timeline (Bachelor's) -->
+                <div class="vertical-line ">
+                    <div class="edu-box  right-box">
+                        <h4>Bachelor's Degree In Computer Science</h4>
+                        <p>Year-2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+
+    </section>
+
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script src="./skills.js"></script>
+</body>
+
+</html>

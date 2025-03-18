@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Gravitas+One&family=Lexend:wght@100..900&family=Markazi+Text:wght@400..700&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+    rel="stylesheet">
+    <title>about</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                HARSH <span>KADAM</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a
+                        href="./index.html">Home</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a
+                        href="./skills.html" ">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
+                        href="./projects.html" ">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
+                        href="./contact.html" ">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="./index.html">Home</a>
+                <a href="#" >About</a>
+                <a href="./skills.html" >Skills</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+
+
+    </nav>
+
+    <section>
+        <div class="main-container1">
+            <div class="image" data-aos="zoom-out" data-aos-duration="4000">
+                <img src="./images/about.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700"> <span>About Me</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900"><span
+                        id="SPAN1">I'm</span> <span>HARSH RAJENDRA KADAM</span></div>
+
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">My name is Harsh Rajendra Kadam.
+                    I was born in Mumbai and currently reside in Nashik. I completed my schooling at St patrick convent
+                    high school in 2019. Subsequently, I pursued a Bachleor Degree in Computer Science from RNC College,
+                    Nashik, under Savitribai Phule Pune University, graduating in 2024..</p>
+
+                <div class="Info_list">
+                    <table class="lh-lg mb-5 mb-xl-0">
+                        <tr>
+                            <td><span id="SPAN1" class="d-title">Age :</span></td>
+                            <td><span class="d-value">21</span></td>
+                        </tr>
+                        <tr>
+                            <td><span id="SPAN1" class="d-title">Residence :</span></td>
+                            <td><span class="d-value">Nashik</span></td>
+                        </tr>
+                        <tr>
+                            <td><span id="SPAN1" class="d-title">Address :</span></td>
+                            <td><span class="d-value">F/6,Nirgun Enclave VijayNagar Devlali Camp, Nashik:422401.</span></td>
+                        </tr>
+                        <tr>
+                            <td><span id="SPAN1" class="d-title">Gmail :</span></td>
+                            <td><span class="d-value"><a href="mailto:harshkadam222@@gmail.com"
+                                        class="d-value text-decoration-none">harshkadam222@gmail.com</a></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span id="SPAN1" class="d-title">Phone :</span></td>
+                            <td><span class="d-value"><a href="tel:+91 8421461752"
+                                        class="d-value text-decoration-none">8421461752</a></span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script src="./about.js"></script>
+</body>
+
+</html>
