@@ -463,5 +463,7 @@ content button {
   transition: 0.2s linear;
   font-family: "Lexend Deca", serif;
 }
-
+#particles-js{
+  height: 110vh;
+}
 }
