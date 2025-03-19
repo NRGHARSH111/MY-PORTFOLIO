@@ -210,7 +210,7 @@ section {
 
 /* Image Hover Animation */
 .main-container1 .image:hover {
-    animation: animate 1.5s ease-in-out infinite;
+    animation: animate 1.5s ease-in-out ;
 }
 
 @keyframes animate {
