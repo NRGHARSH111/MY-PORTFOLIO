@@ -243,11 +243,11 @@ h3 {
 
   .hamburg,
   .cancel {
-    display: block; 
-   }
+    display: block;
+  }
 }
 
-@media (min-width: 600px)  and (max-width:880px){
+@media (min-width: 600px) and (max-width:880px) {
   .social-links i {
     font-size: 2.5rem;
     width: 3rem;
@@ -415,34 +415,34 @@ h3 {
   }
 
 
-.center-box {
-  position: absolute;
-  left: 28px;
-  top: 136%;
-  transform: translateY(-58%)translateX(-5%);
-  width: 238px;
+  .center-box {
+    position: absolute;
+    left: 28px;
+    top: 136%;
+    transform: translateY(-58%)translateX(-5%);
+    width: 238px;
+  }
+
+  .horizontal-line,
+  .upper-vertical-line {
+    display: none;
+  }
+
+  .right-box {
+    position: absolute;
+    left: -127px;
+    top: 126%;
+    transform: translateY(-40%) translateX(-5%);
+    width: 300px;
+  }
+
+
+  h3 {
+    font-size: 3rem;
+  }
 }
 
-.horizontal-line,
-.upper-vertical-line {
-  display: none;
-}
-
-.right-box {
-  position: absolute;
-  left: -127px;
-  top: 126%;
-  transform: translateY(-40%) translateX(-5%);
-  width: 300px;
-}
-
-
-h3 {
-  font-size: 3rem;
-}
-}
-
-@media (min-width:430px) and (max-width: 300px) {
+@media (min-width:300px) and (max-width: 500px) {
   .links {
     display: none;
 
@@ -452,33 +452,14 @@ h3 {
     display: none;
   }
 
-  .main-container{
-    width:500px
-  }
-  section h2{
-    margin-left:97px
-  }
-  .nav-container{
-    width: 500px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .nav-container  .hamburg{
-    padding-left: 1050px;
+  .content h1 span {
+
+    font-family: "Lexend Deca", serif;
   }
 
-  .content h1 span {
-    
-    font-family: "Lexend Deca", serif;
+  .vertical-box {
+    margin-left: 40px;
   }
-  .hamburg{
-    cursor: pointer;
-    position: absolute;
-    right: -67px;
-    top: 10px;
-    color: white;
-    display: none;
-    font-size: clamp(2.3rem, 0.5rem + 5vw, 2rem);
-    font-family: "Lexend Deca", serif;
-  }
+
+
 }
