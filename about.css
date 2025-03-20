@@ -234,6 +234,8 @@ section {
 .content h1 span {
     color: #f30303;
     font-size: clamp(3rem, 2rem + 5vw, 4.5rem); /* Responsive font size */
+    font-family: "Lexend Deca", serif;
+
     text-decoration: underline solid white;
 }
 
@@ -248,6 +250,8 @@ section {
     font-size: clamp(0.8rem, 0.2rem + 9vw, 1.2rem);
     margin: 10px 0;
     color: white;
+    font-family: "Lexend Deca", serif;
+
 }
 
 /* ==========================================================================
@@ -264,21 +268,29 @@ section {
     z-index: 2; /* Explicitly above particles */
     overflow-x: auto; /* Enable horizontal scrolling for the table */
     font-size: 0.9rem;  /* Reduced font size for the entire table */
+    
+
 }
 
 td, th {
     padding: 8px 5px;       /* Reduced padding */
     white-space: nowrap; /* Prevent text from wrapping */
-    font-size: 0.85rem; /* Further reduced font size in cells */
+    font-size: 0.89rem; /* Further reduced font size in cells */
+
+
 }
 
 /* Force long words to break */
 .Info_list .d-value {
     word-break: break-all; /* Force long words to wrap */
+    font-family: "Lexend Deca", serif;
+
 }
 
 #SPAN1 {
     color: red;
+    font-family: "Lexend Deca", serif;
+
 }
 
 /* ==========================================================================
