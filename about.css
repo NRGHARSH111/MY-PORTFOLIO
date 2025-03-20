@@ -263,24 +263,18 @@ section {
     position: relative; /* MUST BE RELATIVE */
     z-index: 2; /* Explicitly above particles */
     overflow-x: auto; /* Enable horizontal scrolling for the table */
-    background-color: rgba(0, 0, 0, 0.8); /* Make table background visible */
     font-size: 0.9rem;  /* Reduced font size for the entire table */
 }
 
 td, th {
-    padding: 8px;       /* Reduced padding */
+    padding: 8px 5px;       /* Reduced padding */
     white-space: nowrap; /* Prevent text from wrapping */
-    border: 1px solid #444; /* Add borders for clarity */
     font-size: 0.85rem; /* Further reduced font size in cells */
 }
 
 /* Force long words to break */
 .Info_list .d-value {
     word-break: break-all; /* Force long words to wrap */
-}
-
-th {
-    background-color: #222; /* Darken header for contrast */
 }
 
 #SPAN1 {
