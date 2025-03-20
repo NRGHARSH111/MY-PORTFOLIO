@@ -243,8 +243,8 @@ h3 {
 
   .hamburg,
   .cancel {
-    display: block;
-  }
+    display: block; 
+   }
 }
 
 @media (max-width: 600px) {
@@ -384,6 +384,7 @@ h3 {
   .vertical-box {
     flex-direction: column;
     align-items: center;
+    margin-left: 68px;
   }
 
   .edu-box {
@@ -419,7 +420,7 @@ h3 {
   left: 28px;
   top: 136%;
   transform: translateY(-58%)translateX(-5%);
-  width: 300px;
+  width: 238px;
 }
 
 .horizontal-line,
@@ -438,6 +439,7 @@ h3 {
 
 h3 {
   font-size: 3rem;
+  margin-left: 64px;
 }
 }
 
@@ -449,5 +451,30 @@ h3 {
 
   .link {
     display: none;
+  }
+
+  .main-container{
+    width:500px
+  }
+  section h2{
+    margin-left:97px
+  }
+  .nav-container{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-container  .hamburg{
+    padding-left: 1050px;
+  }
+  .hamburg{
+    cursor: pointer;
+    position: absolute;
+    right: -67px;
+    top: 10px;
+    color: white;
+    display: none;
+    font-size: clamp(2.3rem, 0.5rem + 5vw, 2rem);
+    font-family: "Lexend Deca", serif;
   }
 }
