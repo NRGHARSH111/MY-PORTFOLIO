@@ -247,7 +247,7 @@ h3 {
    }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px)  and (max-width:880px){
   .social-links i {
     font-size: 2.5rem;
     width: 3rem;
@@ -465,6 +465,11 @@ h3 {
   }
   .nav-container  .hamburg{
     padding-left: 1050px;
+  }
+
+  .content h1 span {
+    
+    font-family: "Lexend Deca", serif;
   }
   .hamburg{
     cursor: pointer;

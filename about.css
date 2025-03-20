@@ -1,5 +1,5 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap'); */
 
 /* ==========================================================================
    GLOBAL STYLES
@@ -21,9 +21,11 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh; /* Keep the fixed height */
+    height: 100vh;
+    /* Keep the fixed height */
     width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
 }
 
 /* ==========================================================================
@@ -32,15 +34,22 @@ body {
 
 /* Background Particle Effect */
 #particles-js {
-    position: fixed; /* Keep it fixed */
-    top: 0;          /* Ensure it starts at the top */
-    left: 0;         /* Ensure it starts at the left */
+    position: fixed;
+    /* Keep it fixed */
+    top: 0;
+    /* Ensure it starts at the top */
+    left: 0;
+    /* Ensure it starts at the left */
     background-color: rgb(0, 0, 0);
-    width: 100%;     /* Cover the entire width */
-    height: 100vh;    /* Cover the entire viewport height */
-    min-height: 100vh; /* Ensure it's at least the viewport height */
+    width: 100%;
+    /* Cover the entire width */
+    height: 100vh;
+    /* Cover the entire viewport height */
+    min-height: 100vh;
+    /* Ensure it's at least the viewport height */
     overflow: hidden;
-    z-index: 0;      /* Absolutely lowest layer */
+    z-index: 0;
+    /* Absolutely lowest layer */
 }
 
 /* ==========================================================================
@@ -86,7 +95,8 @@ nav {
     right: 15px;
     top: 10px;
     color: white;
-    display: none;  /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     font-size: clamp(2.3rem, 0.5rem + 5vw, 2rem);
 }
 
@@ -131,12 +141,12 @@ nav {
 .nav-container .links a.active {
     color: #ff0000;
     font-weight: bold;
-  }
-  
-  .nav-container .links a.active::before {
+}
+
+.nav-container .links a.active::before {
     width: 100%;
-  }
-  
+}
+
 
 /* Dropdown Menu */
 .dropdown {
@@ -176,7 +186,8 @@ section {
     width: 100%;
     height: 100%;
     position: relative;
-    z-index: 1; /* Above particles */
+    z-index: 1;
+    /* Above particles */
 }
 
 /* Main Container */
@@ -187,42 +198,60 @@ section {
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    z-index: 1; /* Above particles */
+    z-index: 1;
+    /* Above particles */
 }
 
 /* Image Section */
 .main-container1 .image {
-    width: 45%;  /* Maintain relative width */
-    max-width: 450px; /* Max width limit */
-    height: auto;    /* Maintain aspect ratio */
-    max-height: 55vh; /* Limit maximum height to viewport */
+    width: 45%;
+    /* Maintain relative width */
+    max-width: 450px;
+    /* Max width limit */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-height: 55vh;
+    /* Limit maximum height to viewport */
     overflow: hidden;
     box-shadow: 0 0 50px #ea020d;
-    min-width: 200px;  /* Prevent disappearing */
+    min-width: 200px;
+    /* Prevent disappearing */
 }
 
 .main-container1 .image img {
     width: 100%;
-    height: 100%; /* Make the image fill the container */
-    object-fit: cover;  /* Preserve aspect ratio and fill the container */
-    display: block; /* Remove extra space */
+    height: 100%;
+    /* Make the image fill the container */
+    object-fit: cover;
+    /* Preserve aspect ratio and fill the container */
+    display: block;
+    /* Remove extra space */
 }
 
 /* Image Hover Animation */
 .main-container1 .image:hover {
-    animation: animate 1.5s ease-in-out ;
+    animation: animate 1.5s ease-in-out;
 }
 
 @keyframes animate {
-    0% { scale: 1; }
-    50% { scale: 1.05; }
-    100% { scale: 1; }
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.05;
+    }
+
+    100% {
+        scale: 1;
+    }
 }
 
 /* Content Section */
 .main-container1 .content {
     color: white;
-    width: 45%;  /* Maintain relative width */
+    width: 45%;
+    /* Maintain relative width */
     min-height: 100px;
 }
 
@@ -233,18 +262,22 @@ section {
 
 .content h1 span {
     color: #f30303;
-    font-size: clamp(3rem, 2rem + 5vw, 4.5rem); /* Responsive font size */
+    font-size: clamp(3rem, 2rem + 5vw, 4.5rem);
+    /* Responsive font size */
     font-family: "Lexend Deca", serif;
 
     text-decoration: underline solid white;
 }
 
 .content .typewriter {
-    font-size: clamp(1rem, 1rem + 5vw, 2.5rem); /* Responsive font size */
+    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+    /* Responsive font size */
     font-weight: 600;
     color: red;
     font-family: "Lexend Deca", serif;
+    padding-top: 10px;
 }
+
 
 .content p {
     font-size: clamp(0.8rem, 0.2rem + 9vw, 1.2rem);
@@ -258,31 +291,43 @@ section {
    INFO-LIST STYLES
    ========================================================================== */
 
-.Info_list {  /* Corrected class name to match HTML */
-    width: 80%;       /* Make table width responsive */
-    max-width: 800px;  /* But limit its maximum width */
+.Info_list {
+    /* Corrected class name to match HTML */
+    width: 80%;
+    /* Make table width responsive */
+    max-width: 800px;
+    /* But limit its maximum width */
     margin: 20px 0px;
     border-collapse: collapse;
     color: white;
-    position: relative; /* MUST BE RELATIVE */
-    z-index: 2; /* Explicitly above particles */
-    overflow-x: auto; /* Enable horizontal scrolling for the table */
-    font-size: 0.9rem;  /* Reduced font size for the entire table */
-    
+    position: relative;
+    /* MUST BE RELATIVE */
+    z-index: 2;
+    /* Explicitly above particles */
+    overflow-x: auto;
+    /* Enable horizontal scrolling for the table */
+    font-size: 0.9rem;
+    /* Reduced font size for the entire table */
+
 
 }
 
-td, th {
-    padding: 8px 5px;       /* Reduced padding */
-    white-space: nowrap; /* Prevent text from wrapping */
-    font-size: 0.89rem; /* Further reduced font size in cells */
+td,
+th {
+    padding: 8px 5px;
+    /* Reduced padding */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    font-size: 0.89rem;
+    /* Further reduced font size in cells */
 
 
 }
 
 /* Force long words to break */
 .Info_list .d-value {
-    word-break: break-all; /* Force long words to wrap */
+    word-break: break-all;
+    /* Force long words to wrap */
     font-family: "Lexend Deca", serif;
 
 }
@@ -310,15 +355,22 @@ td, th {
     /* Existing styles */
 }
 
-@media (max-width: 600px) { /* Added a new media query */
+@media (max-width: 600px) {
+
+    /* Added a new media query */
     .Info_list {
-        width: 95%;  /* Make the table wider on smaller screens */
-        font-size: 0.8rem; /* Further reduce font size */
+        width: 95%;
+        /* Make the table wider on smaller screens */
+        font-size: 0.8rem;
+        /* Further reduce font size */
     }
 
-    td, th {
-        padding: 6px;   /* Even smaller padding */
-        font-size: 0.75rem; /* Even smaller font size in cells */
+    td,
+    th {
+        padding: 6px;
+        /* Even smaller padding */
+        font-size: 0.75rem;
+        /* Even smaller font size in cells */
     }
 }
 
@@ -358,46 +410,89 @@ td, th {
 /* Media query for screens smaller than 992px */
 @media (max-width: 992px) {
     .nav-container .links {
-        display: none; /* Hide the links */
+        display: none;
+        /* Hide the links */
     }
 
     .hamburg,
     .cancel {
-        display: block; /* Show the hamburger icon */
+        display: block;
+        /* Show the hamburger icon */
     }
 
     .main-container1 {
-        flex-direction: column; /* Stack content vertically */
-        text-align: center; /* Center the content */
+        flex-direction: column;
+        /* Stack content vertically */
+        text-align: center;
+        /* Center the content */
     }
 
     .main-container1 .content,
     .main-container1 .image {
-        width: 80%; /* Take up 80% of the container */
+        width: 80%;
+        /* Take up 80% of the container */
     }
 }
 
 @media (max-width:884px) {
-    nav .logo { font-size: 1.5rem; }
+    nav .logo {
+        font-size: 1.5rem;
+    }
+
     /* .main-container1 { flex-direction: column; }  REMOVE THIS */
-    .nav-container .links { display: none; }
-    .hamburg, .cancel { display: block; }
-    .main-container1 .content { width: 90%; } /* Wider content on smaller screens */
-    .main-container1 .image { width: 90%; }  /* Wider image on smaller screens */
+    .nav-container .links {
+        display: none;
+    }
+
+    .hamburg,
+    .cancel {
+        display: block;
+    }
+
+    .main-container1 .content {
+        width: 90%;
+    }
+
+    /* Wider content on smaller screens */
+    .main-container1 .image {
+        width: 90%;
+    }
+
+    /* Wider image on smaller screens */
 
 }
 
 @media (max-width:768px) {
-   /* Adjust font sizes and spacing for smaller screens */
-    .logo { font-size: 1.3rem; }
 
-    .content h1 { font-size: 1.6rem; }
-    .content .typewriter { font-size: 1.8rem; }
-    .content p { font-size: 1rem; }
+    /* Adjust font sizes and spacing for smaller screens */
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .content h1 {
+        font-size: 1.6rem;
+    }
+
+    .content .typewriter {
+        font-size: 1.8rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
 
 }
 
 @media (max-width:440px) {
-    .main-container1 .image { width: 95%; max-height: 300px; }  /* Even wider and smaller max-height */
-    .main-container1 .content { width: 95%; }    /* Even wider content */
+    .main-container1 .image {
+        width: 95%;
+        max-height: 300px;
+    }
+
+    /* Even wider and smaller max-height */
+    .main-container1 .content {
+        width: 95%;
+    }
+
+    /* Even wider content */
 }
