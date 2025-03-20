@@ -489,6 +489,11 @@ th {
         max-height: 300px;
     }
 
+    .nav-container .logo {
+        padding-left: 0px;
+        width: 100%;
+    }
+
     /* Even wider and smaller max-height */
     .main-container1 .content {
         width: 95%;
