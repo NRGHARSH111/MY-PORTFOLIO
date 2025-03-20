@@ -443,7 +443,7 @@ h3 {
 }
 }
 
-@media (max-width: 430px) {
+@media (min-width:430px) and (max-width: 300px) {
   .links {
     display: none;
 
