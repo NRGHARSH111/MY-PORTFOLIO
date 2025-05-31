@@ -440,6 +440,12 @@ h3 {
   h3 {
     font-size: 3rem;
   }
+    .hamburg {
+    display: block;
+  }
+    .hamburg,.cancle {
+    display: block;
+  }
 }
 
 @media (min-width:300px) and (max-width: 500px) {
@@ -459,6 +465,14 @@ h3 {
 
   .vertical-box {
     margin-left: 40px;
+  }
+
+    .hamburg {
+    display: block;
+  }
+
+    .hamburg ,.cancle{
+    display: block;
   }
 
 
