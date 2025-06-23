@@ -125,6 +125,9 @@ nav {
   transition: 0.2s linear;
 }
 
+
+
+
 .dropdown .links a {
   display: flex;
   color: white;
@@ -440,14 +443,18 @@ h3 {
   h3 {
     font-size: 3rem;
   }
-    .hamburg {
+
+  .hamburg {
     display: block;
   }
-    .hamburg,.cancle {
+
+  .hamburg,
+  .cancle {
     display: block;
   }
 }
 
+/* 
 @media (min-width:300px) and (max-width: 500px) {
   .links {
     display: none;
@@ -467,13 +474,141 @@ h3 {
     margin-left: 40px;
   }
 
-    .hamburg {
+  .hamburg {
     display: block;
   }
 
-    .hamburg ,.cancle{
+  .hamburg,
+  .cancle {
     display: block;
   }
 
 
+} */
+
+/* 
+@media (min-width: 300px) and (max-width:440px) {
+  .nav-container {
+    width: 100%;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+
+  .content h1 {
+    font-size: 3rem;
+    margin-left: -133px;
+    margin-top: -105px;
+
+  }
+
+  .content h1 span {
+    margin-left: 0px;
+  }
+
+
+
+  .content .typewriter {
+    font-size: 2rem;
+    margin-left: -99px;
+    display: block;
+    margin-right: -49px;
+  }
+
+  #span1 {
+    font-size: 2rem;
+    margin-left: -80px;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: right;
+    justify-items: left;
+    
+  }
+
+  content button {
+    width: 50%;
+    height: 6vh;
+    margin: 30px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 120%;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.2s linear;
+    font-family: "Lexend Deca", serif;
+  }
+
+  #particles-js {
+    height: 110vh;
+  }
+
+
+
+  .hamburg,
+  .cancle {
+    display: block;
+  }
+} */
+
+
+/* 
+@media (max-width: 575.98px) {
+  .nav-container {
+    padding: 0.5rem;
+  }
+
+  .logo {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+  }
+
+  .content {
+    width: 95%;
+    padding: 1rem;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 0px;
+  }
+
+  .content h1 {
+    font-size: 4rem;
+
+  }
+
+.hamburg,.cancel{
+  display: block;
 }
+
+  .content .typewriter {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+  }
+
+  .social-links i {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+  }
+
+  .content button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    margin-left: -6rem;
+    width: 153%;
+  }
+
+  .main-container1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}   */
