@@ -432,15 +432,22 @@ a {
     display: block;
   }
 
-  .main-container1 {
-    flex-direction: column;
+  .container {
     align-items: center;
-  }
-
-  .main-container1 .content {
+    flex-direction: column;
     width: 80%;
     text-align: center;
+    min-height: 80vh;
   }
+
+  .container a img {
+    height: 300px;
+    width: 300px;
+    margin: 39px 0px;
+    border: 2px solid white;
+    border-radius: 25%;
+  }
+
 
   .social-links {
     justify-content: center;
@@ -453,10 +460,8 @@ a {
   .hamburg {
     display: block;
   }
-  .container{
-    flex-direction: column;
-    overflow: hidden;
-  }
+
+
 }
 
 /* 
