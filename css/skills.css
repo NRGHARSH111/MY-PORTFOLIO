@@ -137,6 +137,7 @@ nav {
   align-items: center;
   transition: 0.2s linear;
   font-family: "Lexend Deca", serif;
+  
 }
 
 .dropdown .links a:hover {
@@ -333,7 +334,7 @@ h3 {
     margin: 31px;
   }
 
-  
+
 
 .hamburg {
   display: block;
@@ -363,6 +364,10 @@ h3 {
   .right-box {
     height: 224px;
     margin: 31px;
+  }
+
+  .dropdown .links a {
+    width: 349px;
   }
 
   .hamburg,

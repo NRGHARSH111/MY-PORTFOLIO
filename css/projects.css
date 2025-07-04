@@ -149,6 +149,7 @@ nav {
   align-items: center;
   transition: 0.2s linear;
   font-family: "Lexend Deca", serif;
+  width: 358px;
 }
 
 .dropdown .links a:hover {
