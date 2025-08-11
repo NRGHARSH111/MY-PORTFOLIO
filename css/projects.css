@@ -46,7 +46,7 @@ nav {
   width: 100%;
   height: 8vh;
   position: absolute;
-  z-index: 2;
+  z-index: 1000;
 }
 
 .nav-container {
@@ -129,9 +129,10 @@ nav {
 }
 
 .dropdown {
-  z-index: 100;
-  position: absolute;
+  z-index: 2000;
+  position: fixed;
   top: 0;
+  left: 0;
   transform: translateY(-500px);
   width: 100%;
   height: auto;
@@ -264,10 +265,10 @@ section {
       ========================================================================== */
 
 .container {
-  height: 100vh;
+  height: auto;
   width: 100%;
-  position: absolute;
-  z-index: 5;
+  position: relative;
+  z-index: 1;
   display: flex;
   margin-top: 125px;
 }
@@ -281,6 +282,7 @@ h1 {
   text-decoration: underline solid white;
   top: 100px;
   color: red;
+  padding: 45px;
 
 }
 
@@ -291,6 +293,8 @@ h1 {
   margin: 50px;
   border: 2px solid white;
   border-radius: 25%;
+  display: block; /* put caption on next line */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 a {
@@ -303,6 +307,17 @@ a {
   margin-top: 5px;
 
 }
+
+/* (removed extra small-screen overrides to avoid conflicts) */
+
+/* Smooth hover like other pages */
+.container a:hover img {
+  transform: scale(1.06);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.35);
+}
+
+/* Ensure project images never overlay nav */
+.image, .container a, .container a img { position: relative; z-index: 1; }
 
 /* ==========================================================================
       6. Responsive Design (Media Queries)
@@ -463,6 +478,46 @@ a {
   }
 
 
+}
+
+/* Extra small phones */
+@media (max-width: 575.98px) {
+  .nav-container { padding: 0.5rem; }
+
+  .logo { font-size: 1.4rem; }
+
+  .main-container1 .content {
+    width: 95%;
+    padding: 1rem;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 0;
+  }
+
+  .content h1 { font-size: 1.8rem; }
+  .content .typewriter { font-size: 2rem; }
+  .content p { font-size: 0.95rem; }
+
+  .content button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
+    width: 100%;
+    display: block;
+  }
+
+  .container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  .container a img {
+    height: 240px;
+    width: 240px;
+    margin: 20px 0;
+  }
 }
 
 /* 

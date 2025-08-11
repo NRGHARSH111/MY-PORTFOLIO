@@ -344,15 +344,30 @@ th {
 
 /* Media query for screens smaller than 992px */
 @media (max-width: 992px) {
-    /* Existing styles */
+    /* Stack main section */
+    .main-container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .main-container1 .image,
+    .main-container1 .content {
+        width: 90%;
+        max-width: 700px;
+    }
 }
 
 @media (max-width: 884px) {
-    /* Existing styles */
+    /* Mobile nav and layout */
+    .nav-container .links { display: none; }
+    .hamburg, .cancel { display: block; }
+    .main-container1 .image img { width: 100%; height: auto; object-fit: cover; }
 }
 
 @media (max-width: 768px) {
-    /* Existing styles */
+    .content h1 { font-size: 2.2rem; text-align: center; }
+    .typewriter { font-size: 1.6rem; text-align: center; }
 }
 
 @media (max-width: 600px) {
@@ -372,9 +387,31 @@ th {
         font-size: 0.75rem;
         /* Even smaller font size in cells */
     }
+
+    /* Ensure table and layout don't overflow */
+    .Info_list { overflow-x: auto; display: block; }
+    .main-container1 .image, .main-container1 .content { width: 95%; }
+    .content { padding: 1rem; }
 }
 
+@media (max-width: 440px) {
+    .main-container1 .image {
+        width: 95%;
+        max-height: 300px;
+    }
 
+    .nav-container .logo {
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    /* Even wider and smaller max-height */
+    .main-container1 .content {
+        width: 95%;
+    }
+
+    /* Even wider content */
+}
 
 /* ==========================================================================
    SOCIAL LINKS STYLES

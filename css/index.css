@@ -293,8 +293,6 @@ section {
 
   }
 
-
-
   .content .typewriter {
     font-size: 2rem;
   }
@@ -313,9 +311,8 @@ section {
   .content button {
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    margin: 1rem;
-    margin-left: -6rem;
-    width: 153%;
+    margin: 1rem auto;
+    width: 100%;
   }
 
   .main-container1 {
