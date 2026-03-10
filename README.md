@@ -1,45 +1,16 @@
-- Harsh Rajendra Kadam - Personal Portfolio
+# React + Vite
 
-  Welcome to my personal portfolio website! This site showcases my skills, projects, and background as a developer.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-- Live Demo
+Currently, two official plugins are available:
 
-  You can view the live portfolio here:[(https://nrgharsh111.github.io/MY-PORTFOLIO/)]
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- About Me
+## React Compiler
 
-  I am Harsh Rajendra Kadam, a passionate developer with experience in web technologies such as HTML, CSS, JavaScript, and more. This portfolio highlights my projects, skills, and contact information.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-- Features
+## Expanding the ESLint configuration
 
-  .Responsive design for mobile and desktop
-  .Sections including About Me, Skills, Projects, and Contact
-  .lean, modern UI/UX
-  . Interactive elements with JavaScript
-
--Technologies Used
-
-  .HTML5
-   
-  .CSS3
-  
-  .JavaScript (Vanilla JS)
-
-
-- Contact
-
-  Feel free to reach out to me via:
-
-   Email: [(harshkadam222@gmail.com)]
-
-
-   LinkedIn: [https://www.linkedin.com/in/harsh-kadam-b35332340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app]
-
-   GitHub:[( https://github.com/NRGHARSH111)]
-
-
-  
-
---
-
-Thank you for visiting my portfolio!
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
