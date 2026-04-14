@@ -90,10 +90,10 @@ const PROJECTS = [
     color: 'from-purple-600 to-indigo-600'
   },
   {
-    name: 'Task Management App',
-    description: 'Collaborative task manager with real-time updates',
-    image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
-    link: 'https://example-tasks.com',
+    name: 'Society Portal',
+    description: 'Residential society management platform for notices, maintenance payments, facility bookings and community communication',
+    image: '/SocietyPortal.png',
+    link: 'https://example-society.com',
     tech: ['React', 'Firebase', 'Tailwind'],
     color: 'from-purple-500 to-pink-500'
   },
