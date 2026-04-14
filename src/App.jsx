@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState, useMemo } from 'react'
-import { Menu, X } from 'lucide-react'
 import { Menu, X, ArrowUp } from 'lucide-react'
 import Lenis from 'lenis'
 import GooeyNav from './components/GooeyNav'
